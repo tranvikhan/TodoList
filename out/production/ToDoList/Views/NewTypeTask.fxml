@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXColorPicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="522.0" prefWidth="395.0" styleClass="MyForm" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.NewTypeTask">
+   <children>
+      <VBox fx:id="MyForm" layoutX="20.0" layoutY="20.0" prefHeight="460.0" prefWidth="453.0" spacing="2.0" styleClass="contentForm" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label text="Type Name" textFill="#7670c4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <AnchorPane prefHeight="33.0" prefWidth="325.0">
+               <children>
+                  <JFXTextField fx:id="txtTypeName" prefHeight="25.0" prefWidth="323.0" styleClass="nomalinput" unFocusColor="#434343" />
+                  <FontAwesomeIcon fx:id="CheckIcon" fill="#2ecc71" glyphName="CHECK" layoutX="301.0" layoutY="16.0" visible="false" />
+               </children>
+            </AnchorPane>
+            <Label text="Color" textFill="#7670c4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <JFXColorPicker fx:id="ColorPicker" prefHeight="25.0" prefWidth="496.0" styleClass="NoEffect" />
+            <Label fx:id="LableColor" text="Icon" textFill="#7670c4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Label>
+            <ScrollPane fitToHeight="true" fitToWidth="true" maxHeight="1.7976931348623157E308" prefHeight="278.0" styleClass="body">
+               <content>
+                  <FlowPane fx:id="ListIcon" hgap="5.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="body" vgap="5.0">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></FlowPane>
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="305.0">
+               <children>
+                  <JFXButton onAction="#Submit" prefHeight="33.0" prefWidth="87.0" styleClass="primaryBtn" text="Add Type">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#CloseFrame" prefHeight="33.0" prefWidth="79.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="primaryBtn" />
+                        <String fx:value="cancelBtn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

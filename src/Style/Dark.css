@@ -1,0 +1,265 @@
+.body{
+    -fx-background-color:rgba(44, 62, 80,1.0);
+}
+#loginform{
+    -fx-background-image: url("../Image/loginback.png");
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+.box{
+    -fx-background-color: rgba(52, 73, 94,0.5);
+    -fx-background-radius: 15;
+}
+.radiusInput{
+    -fx-background-color:rgba(44, 62, 80,0.9);
+    -fx-background-radius: 10;
+    -fx-text-fill: rgba(236, 240, 241,1.0);
+}
+.radiusInput:hover,.radiusInput:focused{
+    -fx-background-color: rgba(52, 73, 94,0.5);
+}
+#NavBar{
+    -fx-background-color: #7670c4;
+}
+.btnIcon{
+    -fx-fill: #ffffff;
+    -fx-text-fill: #ffffff;
+}
+.btnIcon:hover{
+    -fx-opacity: 0.8;
+}
+#searchBar{
+    -fx-background-color:rgba(236, 240, 241,0.2);
+    -fx-background-radius: 5;
+    -fx-text-fill: #ffffff;
+}
+#LeftMenu,.MauLeftMenu{
+    -fx-background-color: rgba(52, 73, 94,1.0);
+}
+.IconMenuItem{
+    -fx-fill: #7670c4;
+}
+.LabelMenuItem{
+    -fx-text-fill: rgba(236, 240, 241,1.0);
+    -fx-font-weight: bold;
+}
+.MenuItem{
+    -fx-background-color: rgba(52, 73, 94,1.0);
+    -fx-background-radius: 5;
+}
+.MenuItem:hover,.MenuItem:focused{
+    -fx-background-color:rgba(44, 62, 80,1.0)
+}
+.MenuActive{
+    -fx-background-color:rgba(44, 62, 80,1.0)
+}
+.Bage{
+    -fx-background-color: #e74c3c;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 50%;
+}
+#MoreIcon{
+    -fx-fill:  rgba(236, 240, 241,1.0);
+}
+.Canladar{
+    -fx-background-color: rgba(52, 73, 94,1.0);
+}
+.MyForm{
+    -fx-background-color: transparent;
+    -fx-padding: 10;
+}
+.contentForm{
+    -fx-background-color: rgba(44, 62, 80,0.95);
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.7), 15, 0, 0, 0);
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.nomalinput{
+    -fx-text-fill: rgba(236, 240, 241,1.0);
+}
+.nomalinput .jfx-text-field{
+    -fx-text-fill: rgba(236, 240, 241,1.0);
+}
+.nomalIcon{
+    -fx-fill: rgba(236, 240, 241,1.0);
+}
+.nomalIcon:hover{
+    -fx-fill:#7670c4;
+}
+.primaryBtn{
+    -fx-background-color: #7670c4;
+    -fx-padding: 8 15;
+    -fx-text-fill: #ffffff;
+}
+.primaryBtn:hover{
+    -fx-background-color: #4f46b1;
+}
+.cancelBtn{
+    -fx-background-color: rgba(52, 73, 94,1.0);
+    -fx-text-fill: rgba(236, 240, 241,1.0);
+}
+.cancelBtn:hover{
+    -fx-background-color:rgba(44, 62, 80,1.0);
+}
+.dayCell{
+    -fx-background-color:rgba(44, 62, 80,1.0);
+    -fx-border-color: rgba(52, 73, 94,1.0);
+    -fx-border-width: 1px;
+}
+.dayCell:hover{
+    -fx-background-color: #b8c4ce;
+    -fx-text-fill: #ffffff;
+}
+.TaskItem{
+    -fx-background-color: rgba(52, 73, 94,1.0);
+    -fx-background-radius: 10;
+    -fx-border-width: 1px;
+    -fx-border-radius: 10;
+    -fx-border-color: rgba(52, 73, 94,1.0);
+}
+.TaskItem:hover{
+    -fx-border-color: #7670c4;
+}
+.TypeTaskIcon{
+    -fx-fill: #7670c4;
+}
+.textTask{
+    -fx-text-fill: rgba(236, 240, 241,1.0);
+}
+.DelBtn,.finishBtn,.EditBtn{
+    -fx-fill:  rgba(236, 240, 241,1.0);
+}
+.EditBtn:hover{
+    -fx-fill: #f39c12;
+}
+.DelBtn:hover{
+    -fx-fill: #e74c3c;
+}
+.finishBtn:hover{
+    -fx-fill: #2ecc71;
+}
+.erro{
+    -fx-text-fill: #e74c3c;
+}
+.jfx-progress-bar > .track, .jfx-progress-bar > .bar {
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+}
+.jfx-progress-bar > .bar {
+    -fx-background-color: linear-gradient(to right,#12c2e9,#c471ed,#f64f59);
+}
+.jfx-progress-bar > .track {
+    -fx-background-color:  rgba(236, 240, 241,0.5);
+}
+.MyScrolPanel{
+    -fx-background-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+}
+.thisToday{
+    -fx-background-color: #7670c4;
+    -fx-font-weight: bold;
+    -fx-text-fill: #ffffff;
+    -fx-background-radius: 50%;
+}
+.ScrollDay{
+    -fx-background-color:rgba(44, 62, 80,1.0);
+    -fx-border-width: 1;
+    -fx-background-color:rgba(44, 62, 80,1.0);
+}
+.HoverMe:hover{
+    -fx-border-color: #7670c4;
+}
+.ControlDay:hover{
+    -fx-fill: #7670c4;
+}
+/* Styling the slider track */
+.jfx-slider > .track {
+    -fx-background-color:rgba(44, 62, 80,1.0)
+}
+
+/* Styling the slider thumb */
+.jfx-slider > .thumb {
+    -fx-background-color: #7670c4;
+}
+
+/* Styling the filled track */
+.jfx-slider > .colored-track {
+    -fx-background-color: #7670c4;
+}
+
+/* Styling the animated thumb */
+.jfx-slider > .animated-thumb {
+    -fx-background-color: #7670c4;
+}
+
+/* Styling the slider value text inside animated thumb */
+.jfx-slider .slider-value {
+    -fx-fill: white;
+    -fx-stroke: white;
+}
+
+.BntTypeTask{
+    -fx-background-color: transparent;
+}
+.BntTypeTask:focused{
+    -fx-background-color: #b2b2b6;
+}
+.BntTypeTask:hover{
+    -fx-background-color:#ecf0f1;
+}
+.NoEffect{
+    -fx-effect: none;
+}
+/*SCROLL BAR*/
+.scroll-bar:horizontal, .scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 0em;
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color:rgba(52, 73, 94,1.0);
+    -fx-background-radius: 5em;
+}
+/* --------------------------*/
+
+.combo-box {
+    -fx-focus-color: #7670c4;
+}
+
+.combo-box .list-cell{
+    -fx-text-fill: #ecf0f1;
+   -fx-background-color:#2c3e50;
+}
+.combo-box .list-cell:hover{
+    -fx-background-color: #7670c4;
+    -fx-text-fill: #ffffff;
+}
+.combo-box .list-cell:selected{
+    -fx-background-color: #7670c4;
+    -fx-text-fill: #ffffff;
+}
+.combo-box .list-view{
+    -fx-background-color: transparent;
+}
+.jfx-text-field
+{
+    -jfx-focus-color:  #7670c4;
+}
+.jfx-text-area{
+    -fx-focus-color: #7670c4;
+}

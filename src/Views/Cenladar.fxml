@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="536.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CenladarController">
+   <top>
+      <AnchorPane prefHeight="44.0" prefWidth="665.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="ThisTime" layoutX="144.0" layoutY="10.0" styleClass="nomalinput" text="Jan 2020">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <JFXButton layoutX="79.0" layoutY="10.0" onAction="#ShowToday" prefHeight="25.0" prefWidth="55.0" text="Today">
+               <styleClass>
+                  <String fx:value="nomalinput" />
+                  <String fx:value="MenuItem" />
+               </styleClass></JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="9.0" onMouseClicked="#minusMonth" prefHeight="26.0" prefWidth="23.0" styleClass="MenuItem" text="  ">
+               <graphic>
+                  <FontAwesomeIcon fontSmoothingType="LCD" glyphName="CHEVRON_LEFT" selectionEnd="0" selectionStart="0" size="1.5em" styleClass="nomalIcon" textAlignment="CENTER" />
+               </graphic>
+            </JFXButton>
+            <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="46.0" layoutY="9.0" onMouseClicked="#plusMonth" prefHeight="26.0" prefWidth="2.0" styleClass="MenuItem" text=" ">
+               <graphic>
+                  <FontAwesomeIcon fontSmoothingType="LCD" glyphName="CHEVRON_RIGHT" selectionEnd="0" selectionStart="0" size="1.5em" styleClass="nomalIcon" textAlignment="CENTER" />
+               </graphic>
+            </JFXButton>
+            <JFXProgressBar fx:id="ProgressDel" maxWidth="1.7976931348623157E308" minHeight="2.0" minWidth="600.0" prefHeight="2.0" progress="0.0" secondaryProgress="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </top>
+   <center>
+      <GridPane fx:id="girdCanladar" alignment="CENTER" prefHeight="399.0" prefWidth="659.0" styleClass="Canladar">
+        <columnConstraints>
+            <ColumnConstraints fillWidth="true" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fillWidth="true" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fillWidth="true" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fillWidth="true" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fillWidth="true" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints fillWidth="true" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints fillWidth="true" halignment="CENTER" hgrow="ALWAYS" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" valignment="CENTER" vgrow="NEVER" />
+          <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+          <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" valignment="CENTER" vgrow="ALWAYS" />
+        </rowConstraints>
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="8.0" prefWidth="94.0" styleClass="nomalinput" text="Mo" textAlignment="CENTER" />
+            <Label alignment="CENTER" contentDisplay="TOP" styleClass="nomalinput" text="Tu" textAlignment="CENTER" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="8.0" prefWidth="94.0" styleClass="nomalinput" text="We" textAlignment="CENTER" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="8.0" prefWidth="94.0" styleClass="nomalinput" text="Th" textAlignment="CENTER" GridPane.columnIndex="3" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="8.0" prefWidth="94.0" styleClass="nomalinput" text="Tr" textAlignment="CENTER" GridPane.columnIndex="4" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="8.0" prefWidth="94.0" styleClass="nomalinput" text="Sa" textAlignment="CENTER" GridPane.columnIndex="5" />
+            <Label alignment="CENTER" contentDisplay="TOP" prefHeight="8.0" prefWidth="94.0" styleClass="nomalinput" text="Su" textAlignment="CENTER" GridPane.columnIndex="6" />
+         </children>
+      </GridPane>
+   </center>
+   <padding>
+      <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+   </padding>
+</BorderPane>

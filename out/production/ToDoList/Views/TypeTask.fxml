@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox accessibleText="NewTypeTast" alignment="CENTER_LEFT" minHeight="33.0" onMouseClicked="#ShowType" onMouseEntered="#ShowDel" onMouseExited="#HideDel" prefHeight="33.0" prefWidth="235.0" styleClass="MenuItem" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TypeTaskController">
+   <children>
+      <FontAwesomeIcon fx:id="icon" fill="#7670c4" glyphName="PLUS_CIRCLE" selectionEnd="0" selectionFill="RED" selectionStart="0" size="1.7em" smooth="false" textAlignment="CENTER" wrappingWidth="40.0" />
+      <Label fx:id="name" prefHeight="17.0" prefWidth="155.0" styleClass="LabelMenuItem" text="New Type" />
+      <FontAwesomeIcon fx:id="DelIcon" glyphName="TRASH" onMouseClicked="#DelTypeAction" size="1.2em" styleClass="DelBtn" visible="false" />
+   </children>
+</HBox>

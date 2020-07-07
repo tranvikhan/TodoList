@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.*?>
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="loginform" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <AnchorPane layoutX="300.0" layoutY="78.0" prefHeight="400.0" prefWidth="300.0" styleClass="box">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="110.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/user.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtUsername" layoutX="30.0" layoutY="159.0" prefHeight="34.0" prefWidth="240.0" promptText="Username" styleClass="radiusInput">
+               <padding>
+                  <Insets left="35.0" />
+               </padding>
+            </TextField>
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="36.0" layoutY="166.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/usersign.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtPassword" layoutX="30.0" layoutY="224.0" onKeyPressed="#changeText" prefHeight="34.0" prefWidth="240.0" promptText="Password" styleClass="radiusInput">
+               <padding>
+                  <Insets left="35.0" right="30.0" />
+               </padding>
+            </PasswordField>
+            <FontAwesomeIcon fx:id="btnShowPassword" fill="WHITE" glyphName="EYE" onMouseClicked="#ShowPassword" size="1.2em" styleClass="btnIcon" AnchorPane.rightAnchor="40.60000038146973" AnchorPane.topAnchor="232.65714359283447" />
+            <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="34.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Image/lock.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="louisville" alignment="CENTER" layoutX="26.0" layoutY="275.0" prefHeight="17.0" prefWidth="240.0" text="Đăng nhập thất bại!" textAlignment="CENTER" textFill="#e74c3c" />
+            <JFXButton layoutX="30.0" layoutY="310.0" onAction="#CheckLogin" prefHeight="38.0" prefWidth="240.0" styleClass="radiusInput" text="LOGIN" />
+            <JFXProgressBar fx:id="processBar" layoutX="30.0" layoutY="385.0" prefWidth="240.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

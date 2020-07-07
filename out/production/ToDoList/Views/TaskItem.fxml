@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="mainTask" maxHeight="120.0" maxWidth="1.7976931348623157E308" minHeight="120.0" minWidth="550.0" prefHeight="120.0" prefWidth="550.0" styleClass="TaskItem" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.TaskItem">
+   <children>
+      <Label fx:id="type" layoutX="43.0" layoutY="11.0" prefHeight="24.0" prefWidth="289.0" text="Study" AnchorPane.leftAnchor="45.0" AnchorPane.topAnchor="11.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon fx:id="icon" glyphName="BOOKMARK" layoutX="14.0" layoutY="32.0" size="2em" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="11.428571701049805" />
+      <Label fx:id="title" layoutX="29.0" layoutY="65.0" prefHeight="19.0" prefWidth="426.0" styleClass="textTask" text="Hợp cố vấn" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="content" alignment="TOP_LEFT" layoutX="29.0" layoutY="90.0" prefHeight="33.0" prefWidth="413.0" styleClass="textTask" text="Hợp cố vấn tại nhà điều hành" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="118.0" AnchorPane.topAnchor="70.0" />
+      <Label fx:id="date" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="388.0" layoutY="14.0" prefHeight="19.0" prefWidth="195.0" styleClass="textTask" text="Monday, Jun 1,2020" textAlignment="RIGHT" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="11.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="time" alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="583.0" layoutY="14.0" prefHeight="19.0" prefWidth="63.0" styleClass="textTask" text="07:30" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="11.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIcon glyphName="EDIT" layoutX="637.0" layoutY="87.0" onMouseClicked="#Edit" size="2em" styleClass="EditBtn" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="14.0" />
+      <FontAwesomeIcon glyphName="CHECK_CIRCLE" layoutX="597.0" layoutY="87.0" onMouseClicked="#Delete" size="2em" styleClass="finishBtn" AnchorPane.bottomAnchor="18.0" AnchorPane.rightAnchor="60.0" />
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</AnchorPane>

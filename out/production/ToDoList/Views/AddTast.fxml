@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="365.0" styleClass="MyForm" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AddTaskController">
+
+            <VBox fx:id="MyForm" layoutY="4.0" prefHeight="450.0" prefWidth="345.0" spacing="2.0" styleClass="contentForm" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+         <children>
+            <Label fx:id="lableTitles" text="Title" textFill="#7670c4">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+         </Label>
+            <JFXTextField fx:id="txtTitle" prefHeight="25.0" prefWidth="323.0" styleClass="nomalinput" unFocusColor="#434343" />
+         <Label text="Type" textFill="#7670c4">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font>
+            <VBox.margin>
+               <Insets top="15.0" />
+            </VBox.margin>
+         </Label>
+         <JFXComboBox fx:id="CmbType" prefHeight="25.0" prefWidth="305.0" styleClass="nomalinput" />
+            <Label text="Day" textFill="#7670c4">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+         </Label>
+            <JFXDatePicker fx:id="datePicker" defaultColor="#7670c4" prefHeight="28.0" prefWidth="482.0" styleClass="nomalinput" />
+            <Label text="Time" textFill="#7670c4">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+         </Label>
+            <JFXTimePicker fx:id="timePicker" defaultColor="#7670c4" prefHeight="28.0" prefWidth="524.0" styleClass="nomalinput" />
+            <Label text="Content" textFill="#7670c4">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+         </Label>
+            <JFXTextArea fx:id="txtContent" prefHeight="114.0" prefWidth="360.0" styleClass="nomalinput" unFocusColor="#434343" />
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="305.0" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <children>
+                  <JFXButton onAction="#Submit" prefHeight="33.0" prefWidth="87.0" styleClass="primaryBtn" text="Add">
+                     <HBox.margin>
+                        <Insets right="30.0" />
+                     </HBox.margin>
+                  </JFXButton>
+                  <JFXButton onAction="#CloseFrame" prefHeight="33.0" prefWidth="79.0" text="Cancel">
+                     <HBox.margin>
+                        <Insets left="30.0" />
+                     </HBox.margin>
+                     <styleClass>
+                        <String fx:value="primaryBtn" />
+                        <String fx:value="cancelBtn" />
+                     </styleClass>
+                  </JFXButton>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+</AnchorPane>
